@@ -1,4 +1,7 @@
 import axios from "axios";
+//con este mapeo que realizo en la pagina  https://app.quicktype.io/ , puedo mapear un resp json, 
+//de esa forma puedo tener el intelligence en la respuesta
+import {mapPaises} from "./mapPaises"
 
 (()=>{
 
@@ -15,6 +18,8 @@ import axios from "axios";
            console.log(`Nombre de moneda: ${resp.data[0].currencies.COP.name}`)
            console.log(`Simbolo de moneda: ${resp.data[0].currencies.COP.symbol}`)
            console.log(`Paises limitrofes: ${resp.data[0].borders}`)
+           
+           
             
             
         } catch (error) {
